@@ -196,7 +196,8 @@ tabs.forEach(function(item) {
 const swiperCfImg = new Swiper('.cf_swiper', {
     loop: true,
     centeredSlides: true,
-    slidesPerView: 2,
+    slidesPerView: 'auto',
+    spaceBetween: 50,
 });
 
 //cf 텍스트 스와이퍼

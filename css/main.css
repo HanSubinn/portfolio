@@ -517,7 +517,7 @@ header .search_box .keyword_box {
 .brand_img_swiper .s6 {background: url(../image/bg_prd_top.jpg) no-repeat;}
 .brand_img_swiper .s7 {background: url(../image/bg_prd_philadelphia.jpg) no-repeat;}
 .brand_img_swiper .s8 {background: url(../image/bg_prd_starbucks.jpg) no-repeat;}
-.brand_img_swiper .s9 {background: url(./image/bg_prd_green.jpg) no-repeat;}
+.brand_img_swiper .s9 {background: url(../image/bg_prd_green.jpg) no-repeat;}
 .brand_img_swiper .s10 {background: url(../image/bg_prd_hogi.jpg) no-repeat;}
 .brand_img_swiper .s11 {background: url(../image/bg_prd_mitte.jpg) no-repeat;}
 .brand_img_swiper .s12 {background: url(../image/bg_prd_honey.jpg) no-repeat;}
@@ -776,11 +776,12 @@ header .search_box .keyword_box {
 }
 .cf_swiper .swiper-wrapper {
     display: flex;
-    gap: 5rem;
+    /* gap: 5rem; */
     /* position: relative; */
 }
 .cf_swiper .swiper-slide {
     min-width: 900px;
+    cursor: pointer;
     /* margin-left: 20rem; */
 }
 /* 텍스트 */
