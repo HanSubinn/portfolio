@@ -50,6 +50,34 @@ gnbDep1.forEach(function(item) {
     })
 });
 
+//헤더 dep2 흰 배경
+// const gnbLink = document.querySelectorAll('#gnb .dep1>li')
+// const gnbDepth2 = [...gnbLink].map(h => h.clientHeight)
+
+// const gnbBg = document.querySelector('#gnb')
+
+// const gnbDepth2Height = Math.max(...gnbDepth2);
+// document.documentElement.style.setProperty('--gnb-height',`${gnbDepth2Height + 20}px`)
+
+// console.log(gnbDepth2Height)
+
+// gnbLink.forEach(function(gnb) {
+//     // const gnbbg = document.createElement('div')
+//     //     gnbbg.setAttribute('class', 'gnb_bg_test')
+
+//     gnb.addEventListener('mouseover', function() {
+//         gnbBg.classList.add('gnb_bg')
+        
+//         // document.querySelector('header').appendChild(gnbbg)
+        
+//     })
+//     gnb.addEventListener('mouseout', function() {
+//         gnbBg.classList.remove('gnb_bg')
+//         // gnbbg.remove()
+//     })
+// })
+
+
 // //헤더 search-box 팝업
 const searchBtn = document.querySelector('.search_wrap button')
 const searchBox = document.querySelector('.search_box')
@@ -63,18 +91,21 @@ searchBtn.addEventListener('click', function() {
     }
 });
 
-//신제품 스크롤트리거
-gsap.registerPlugin(ScrollTrigger);
 
-const aniProduct = gsap.timeline()
-aniProduct
-    .from('.product_img_swiper swiper-slide-active img', {width: '120vw', height: '100vh'})
-ScrollTrigger.create({
-    animation: aniProduct,
-    trigger: '.new_product',
-    scrub: true,
-    pin: true,
-})
+
+//크리치오 사진 크기 스크롤트리거
+gsap.registerPlugin(ScrollTrigger);
+const productMainImg = document.querySelector('.product_img_swiper .swiper-slide:first-child img')
+
+// const aniProduct = gsap.timeline()
+// aniProduct
+//     .from(productMainImg, {scale: 10})
+// ScrollTrigger.create({
+//     animation: aniProduct,
+//     trigger: '.new_product',
+//     scrub: true,
+//     pin: true,
+// })
 
 // 신제품 이미지 스와이퍼
 const swiperNewProduct = new Swiper('.product_img_swiper', {
@@ -109,6 +140,8 @@ var swiperBrandImg = new Swiper ('.brand_img_swiper', {
         swiper: swiperBrandList
     },
 });
+
+//브랜드 h2 스크롤트리거
 
 //동서 히스토리
 const aniHistory = gsap.timeline()

@@ -33,6 +33,7 @@ hgroup p {
 }
 hgroup span {
     font-size: 1.7rem;
+    color: #777;
 }
 section {
     height: 80vh;  /* *** */
@@ -59,18 +60,23 @@ section {
     border-radius: 3rem;
     font-family: 'ubuntu';
     font-weight: 500;
+    transition: all 0.4s;
 }
 .main_link::after {
     content: "";
     position: absolute;
     right: 0;
+    top: 0;
     display: block;
-    width: rem;
+    width: 1rem;
     height: 1rem;
     background-image: url(/image/text_icon.png);
 }
 
-.main_link:hover {}
+.main_link:hover {
+    color: #fff;
+    background: var(--main-red);
+}
 
 [class^="mo"] {
     display: none;
@@ -83,7 +89,7 @@ header {
     left: 0;
     right: 0;
     z-index: 9000;
-    height: 9rem;
+    --header-height: 9rem;
     color: #fff;
 }
 header:hover {
@@ -127,6 +133,16 @@ header.scroll h1>a {
 header.scroll .mall_wrap {
     color: #222;
     border: 1px solid #222;
+}
+#gnb {
+    height: var(--header-height);
+    /* overflow: hidden; */
+    transition: height 0.2s, background 0.4s;
+}
+#gnb.gnb_bg {
+    height: var(--gnb-height);
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
 }
 #gnb .dep1 {
     display: flex;
@@ -396,6 +412,9 @@ header .search_box .keyword_box {
     transition: all 0.5s;
     padding: 0;
 }
+.product_img_swiper .swiper-slide-active:hover {
+    scale: 1.1;
+}
 
 
 /*** our_brands ***/
@@ -403,11 +422,22 @@ header .search_box .keyword_box {
     height: 140vh;
 }
 .our_brands hgroup h2 {
+    position: relative;
     font-size: 4.6rem;
     color: #333;
 }
 
 /* 브랜드 리스트 스와이퍼 */
+/* .our_brands h2::before {
+    content: '';
+    width: 14%;
+    height: 1rem;
+    background: var(--main-red);
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+} */
 .our_brands {
     position: relative;
 }
@@ -462,6 +492,11 @@ header .search_box .keyword_box {
     background-size: cover !important;
     background-position: center;
     color: #fff;
+    opacity: 0;
+    transition: opacity 500ms, transform 950ms;
+}
+.brand_img_swiper .swiper-slide-active {
+    opacity: 1;
 }
 .brand_img_swiper .swiper-slide>img {
     width: 20%;
@@ -474,8 +509,8 @@ header .search_box .keyword_box {
     font-weight: 300;
 }
 
-.brand_img_swiper .s1 {background: url(/image/bg_prd_maxim.jpg) no-repeat;}
-.brand_img_swiper .s2 {background: url(/image/bg_prd_kanubarista.jpg) no-repeat;}
+.brand_img_swiper .s1 {background: url(/image/bg_prd_maxim.jpg) no-repeat fixed;}
+.brand_img_swiper .s2 {background: url(/image/bg_prd_kanubarista.jpg) no-repeat fixed;}
 .brand_img_swiper .s3 {background: url(/image/bg_prd_kanu.jpg) no-repeat;}
 .brand_img_swiper .s4 {background: url(/image/bg_prd_post.jpg) no-repeat;}
 .brand_img_swiper .s5 {background: url(/image/bg_prd_oreo.jpg) no-repeat;}
@@ -509,6 +544,9 @@ header .search_box .keyword_box {
     background: #000;
     border-radius: 50%;
     color: #fff;
+}
+.story_list li:hover a {
+    background-size: ;
 }
 .story_list li:first-child {
     z-index: 4;
