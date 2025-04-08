@@ -1,0 +1,43 @@
+@charset "urf-8";
+
+/* 아이콘 */
+@import url("https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css");
+
+/* 한글폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@font-face {
+    font-family: 'pretendard';
+    src: url(/fonts/Pretendard-Regular.woff2);
+    font-family: 400;
+}
+@font-face {
+    font-family: 'pretendard';
+    src: url(/fonts/Pretendard-Bold.woff2);
+    font-family: 700;
+}
+@font-face {
+    font-family: 'pretendard';
+    src: url(/fonts/Pretendard-Black.woff2);
+    font-family: 900;
+}
+@font-face {
+    font-family: 'pretendard';
+    src: url(/fonts/Pretendard-Medium.woff2);
+    font-family: 500;
+}
+/* 영문폰트 */
+@font-face {
+    font-family: 'ubuntu';
+    src: url(/fonts/Ubuntu-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'ubuntu';
+    src: url(/fonts/Ubuntu-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'ubuntu';
+    src: url(/fonts/Ubuntu-Medium.ttf);
+    font-weight: 500;
+}

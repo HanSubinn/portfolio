@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크롤트리거 연습1</title>
+    <!-- CSS : 기본스타일 -->
+    <!-- 섹션별 스타일은 아래쪽에 작성함 -->
+    <style>
+    body {
+        background-image:
+            linear-gradient(rgba(0,0,0,.07) 2px, transparent 2px),
+            linear-gradient(90deg, rgba(0,0,0,.07) 2px, transparent 2px),
+            linear-gradient(rgba(0,0,0,.06) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0,0,0,.06) 1px, transparent 1px);
+        background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+        background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+  }
+  section {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section:nth-child(even) {
+    background: rgba(0,0,0,.05);
+  }
+  .num {
+    font-family: 'Arial';
+    font-weight: 900;
+    color: #ccc;
+    font-size: 100px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+    </style>
+
+    <!-- JS -->
+    <!-- gsap과 scrollTrigger 둘 다 cdn 연결 -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    
+
+</head>
+<body>
+    <!-- gsap 사이트 -->
+     <div id="wrap">
+        <!-- section*10>#box$.box+.num{$$} -->
+        <section class="sec1">
+            <div id="box1" class="box">
+                <p class="txt1">JavaScript</p>
+                <p class="txt2">라이브러리</p>
+                <p class="txt3">Scroll</p>
+                <p class="txt4">Trigger</p>
+            </div>
+            <div class="num">01</div>
+        </section>
+        <section class="sec2">
+            <div id="box2" class="box"></div>
+            <div class="num">02</div>
+        </section>
+        <section class="sec3">
+            <div id="b1" class="box"></div>
+            <div id="b2" class="box"></div>
+            <div id="b3" class="box"></div>
+            <div class="num">03</div>
+        </section>
+        <section class="sec4">
+            <div id="box4" class="box">
+                <p class="txt1">JavaScript</p>
+                <p class="txt2">라이브러리</p>
+                <p class="txt3">Scroll</p>
+                <p class="txt4">Trigger</p>
+            </div>
+            <div class="num">04</div>
+        </section>
+        <section class="sec5">
+            <div id="box5" class="box">
+                <p class="txt1">계절이 지나가는 하늘에는</p>
+                <p class="txt2">가을로 가득 차 있습니다.</p>
+                <p class="txt3">나는 아무 걱정도 없이</p>
+                <p class="txt4">가을 속의 별들을 다 헤일 듯 합니다.</p>
+            </div>
+            <div class="num">05</div>
+        </section>
+        <section class="sec6">
+            <div id="box6" class="box"></div>
+            <div class="num">06</div>
+        </section>
+        <section class="sec7">
+            <div id="card1" class="card">
+                <div class="tit">Card 1</div>
+            </div>
+            <div id="card2" class="card">
+                <div class="tit">Card 2</div>
+            </div>
+            <div id="card3" class="card">
+                <div class="tit">Card 3</div>
+            </div>
+            <div id="card4" class="card">
+                <div class="tit">Card 4</div>
+            </div>
+            <div class="num">07</div>
+        </section>
+        <section class="sec8">
+            <dl>
+                <dt>Figma</dt>
+                <dd class="figma">
+                    <div class="bar" data-skill-value="80"><span></span></div>
+                </dd>
+                <dt>HTML</dt>
+                <dd class="html">
+                    <div class="bar" data-skill-value="60"><span></span></div>
+                </dd>
+                <dt>CSS</dt>
+                <dd class="css">
+                    <div class="bar" data-skill-value="100"><span></span></div>
+                </dd>
+                <dt>JavaScript</dt>
+                <dd class="js">
+                    <div class="bar" data-skill-value="90"><span></span></div>
+                </dd>
+            </dl>
+            <div class="num">08</div>
+        </section>
+        <section class="sec9">
+            <div class="pin_content">I am Pin Content</div>
+            <div class="scroll_box">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                </ul>
+            </div>
+            <div class="num">09</div>
+        </section>
+        <section class="sec10">
+            <div class="num">10</div>
+        </section>
+        <section class="sec11">
+            <div class="num">11</div>
+        </section>
+    </div>
+
+     <style>
+        #box2 {
+            border-radius: 50%;
+            width: 100px;
+            height:100px;
+            background-size: cover;
+            flex-shrink: 0;
+            background-image: url(https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        }
+        .sec1, .sec4 {
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .sec1 p, .sec4 p {
+            font-size: 80px;
+            font-weight: 900;
+            margin: 0;
+            text-align: center;
+            font-family: "Arial";
+            text-transform: uppercase;
+        }
+        .sec1 p:nth-child(even), .sec4 p:nth-child(even) {
+            color: mediumaquamarine;
+        }
+        .sec3 {
+            gap: 40px;
+        }
+        .sec3 .box {
+            width: 200px;
+            height: 200px;
+            background: tomato;
+        }
+       
+
+        .sec5 .box {
+            position: relative;
+            width: 100%;
+        }
+        /* .sec5 p {
+            position: absolute;
+            left: 0;
+            right: 0;
+            transform: translateY(-150%);
+            text-align: center;
+            background: #fff;
+            font-size: 60px;
+            font-weight: bold;
+        } */
+        .sec5 p {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0;
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+            opacity: 0;
+        }
+
+        .sec7 {
+            display: block;
+        }
+        .sec7 .card {
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        .sec7 .tit {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            font-size: 50px;
+            font-weight: bold;
+            padding: 100px;
+            box-sizing: border-box;
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,0.9) 95%);
+            color: #fff;
+        }
+        #card1 {
+            background-image: url(https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        }
+        #card2 {
+            background-image: url(https://images.unsplash.com/photo-1520322082799-20c1288346e3?q=80&w=1596&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        }
+        #card3 {
+            background-image: url(https://images.unsplash.com/photo-1509224863479-ab583ee78692?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        }
+        #card4 {
+            background-image: url(https://images.unsplash.com/photo-1420585269105-d908ec316eb3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        }
+
+        .sec7 {overflow: hidden;}
+        .sec8 dl {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            width: 80%;
+            padding: 30px;
+            border: 1px solid #000;
+        }
+        .sec8 dt {
+            width: calc(20% - 30px);
+            font-size: 30px;
+            font-weight: bold;
+            text-align: right;
+        }
+        .sec8 dd {width: 80%;margin: 0;}
+        .sec8 .bar {
+            width: 10px;
+            height: 100%;
+            display: flex;
+            justify-content:flex-end;
+        }
+        .sec8 .figma .bar {background: slateblue;}
+        .sec8 .html .bar {background: dodgerblue;}
+        .sec8 .css .bar {background: rgb(255, 145, 0);}
+        .sec8 .js .bar {background: gold;}
+        .sec8 .bar span {
+            color: #fff;
+            font-size: 30px;
+            padding: 0 20px;
+        }
+
+        .sec9 {
+            height: auto;
+            align-items: flex-start;
+        }
+        .sec9 .pin_content {
+            width: 50%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            color: #fff;
+            background: hotpink;
+            position: sticky;
+            top: 0;
+        }
+        .sec9 .scroll-box {
+            width: 50px;
+        }
+        .sec9 .scroll_box ul {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px;
+            gap: 30px;
+            list-style: none;
+            margin: 0;
+        }
+        .sec9 .scroll_box li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: calc(50% - 15px);
+            height: 500px;
+            font-size: 70px;
+            font-weight: bold;  
+            background: gold;
+        }
+        .sec9 .scroll_box li:nth-child(2n) {
+            transform: translateY(200px);
+        }
+        
+     </style>
+     <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        //02.
+        const ani2 = gsap.timeline()
+        ani2
+            // .to('#box2', {scale: 22})
+            .to('#box2', {width: '120vw', height: '120vw'})
+            .to('#box2', {autoAlpha: 0})
+        ScrollTrigger.create({
+            animation: ani2,
+            trigger: '.sec2',
+            // start: 'top 100%', end: 'bottom 0',  => default(normal)
+            // start: 'top 0', end: 'bottom 0',  => default(pin)
+            end:  '+=2000 top',
+            scrub: true,
+            pin: true,
+            // markers: true,
+        })
+
+        //01.
+        const ani1 = gsap.timeline()
+        ani1
+            // .from('.sec1 .txt1', {xPercent: -100}) //1st
+            // .from('.sec1 .txt2', {xPercent: 100}) //2nd
+            // .from('.sec1 .txt3', {xPercent: -100}) //3rd
+            // .from('.sec1 .txt4', {xPercent: 100}) //4th
+            
+            // .from('.sec1 .txt1', {xPercent: -100}, 't') //1st
+            // .from('.sec1 .txt2', {xPercent: 100}) //2nd
+            // .from('.sec1 .txt3', {xPercent: -100}, 't') //1st
+            // .from('.sec1 .txt4', {xPercent: 100}) //3rd
+
+            .from('.sec1 .txt1', {xPercent: -100}, 4) //4th
+            .from('.sec1 .txt2', {xPercent: 100}, 2) //2nd
+            .from('.sec1 .txt3', {xPercent: -100}, 1) //1st
+            .from('.sec1 .txt4', {xPercent: 100}, 3) //3rd
+
+        ScrollTrigger.create({
+            animation: ani1,
+            trigger: '.sec1',
+            pin: true,
+            scrub: true,
+            // markers: true,
+        })
+
+        //03.
+        const ani3 = gsap.timeline()
+        ani3
+            .from('.sec3 #b1', {y: -100, autoAlpha: 0})
+            .from('.sec3 #b2', {y: 100, autoAlpha: 0})
+            .from('.sec3 #b3', {y: -100, autoAlpha: 0})
+
+        ScrollTrigger.create({
+            animation: ani3,
+            trigger: '.sec3',
+            pin: true,
+            // scrub: true,
+            // markers: true,
+        })
+
+        //04. 연습
+        //=>가운데에 있던 텍스트가 고정된 상태로 짝수번째는 왼쪽, 홀수번째는 오른쪽으로 동시에 사라지는 애니메이션
+
+        const ani4 = gsap.timeline()
+        ani4
+            .to('.sec4 .txt1', {xPercent: -100}, 1)
+            .to('.sec4 .txt2', {xPercent: 100}, 1)
+            .to('.sec4 .txt3', {xPercent: -100}, 1)
+            .to('.sec4 .txt4', {xPercent: 100}, 1)
+
+        ScrollTrigger.create({
+            animation: ani4,
+            trigger: '.sec4',
+            pin: true,
+            scrub: true,
+        })
+
+        //05.
+        const ani5 = gsap.timeline()
+        ani5
+            // .from('.sec5 .txt1', {y: 50, autoAlpha: 0, duration: 2}, '+=1')
+            // .from('.sec5 .txt2', {y: 50, autoAlpha: 0, duration: 2}, '+=1')
+            // .from('.sec5 .txt3', {y: 50, autoAlpha: 0, duration: 2}, '+=1')
+            // .from('.sec5 .txt4', {y: 50, autoAlpha: 0, duration: 2}, '+=1')
+
+            .to('.sec5 .txt1', {y: '-100%', autoAlpha:1}, 1)
+            .to('.sec5 .txt1', {autoAlpha: 0}, 2)
+            .to('.sec5 .txt2', {y: '-100%', autoAlpha:1}, 2)
+            .to('.sec5 .txt2', {autoAlpha: 0}, 3)
+            .to('.sec5 .txt3', {y: '-100%', autoAlpha:1}, 3)
+            .to('.sec5 .txt3', {autoAlpha: 0}, 4)
+            .to('.sec5 .txt4', {y: '-100%', autoAlpha:1}, 4)
+
+        //{param} 뒤에 delay 적용
+        //'+=1', (1초 뒤에), '+=0.5'(0.5초 뒤에), '-=1'(1초 전에)
+
+        ScrollTrigger.create({
+            animation: ani5,
+            trigger: '.sec5',
+            pin: true,
+            scrub: true,
+        })
+
+
+        //06.
+        gsap.to('.sec6', {
+            scrollTrigger: {
+                trigger: '.sec6',
+                start: 'top 70%',
+                end: '50% 30%',
+                // onEnter: function() {
+                //     alert('섹션 6로 진입하였습니다.')
+                // },
+                onLeave: function() {
+                    console.log('스크롤트리거 섹션이 모두 종료.')
+                    //함수 호출이거나, 데이터를 이용한 액션이 필요한 경우에 메소드를 사용할 수 있음
+                },
+                // markers: true,
+            }
+        })
+
+        //07.
+
+
+        //08.
+        /*
+        const ani8 = gsap.timeline()
+
+        ani8    
+            .to('.sec8 .figma .bar', {width: '80%'}, 'skill')
+            .to('.sec8 .html .bar', {width: '60%'}, 'skill')
+            .to('.sec8 .css .bar', {width: '100%'}, 'skill')
+            .to('.sec8 .js .bar', {width: '90%'}, 'skill')
+
+        ScrollTrigger.create({
+            animation: ani8,
+            trigger: '.sec8 dl',
+            start: 'top 70%',
+            end: 'bottom 30%',
+            toggleActions: 'play reverse play reverse',
+            markers: true,
+        })
+        */
+
+        const skillBar = document.querySelectorAll('.sec8 .bar')
+        skillBar.forEach(bar => {
+            let value = bar.getAttribute('data-skill-value')
+            bar.innerHTML = `<span>${value}</span>`
+            gsap.to(bar, {
+                width: `${value}%`,
+                scrollTrigger: {
+                    trigger: '.sec8 dl',
+                    start: 'top 70%',
+                    end: 'bottom 30%',
+                    toggleActions: 'play reverse play reverse',
+                    // markers: true,
+                }
+            })
+        })
+
+
+        //09.
+        const sbHeight = document.querySelector('.sec9').clientHeight;
+        gsap.to('.pin_content', {
+            background: 'green',
+            scrollTrigger: {
+                trigger: '.pin_content',
+                start: 'top top',
+                end: `${sbHeight} bottom`,
+                pin: true,
+                scrub: true,
+                markers: true,
+            }
+        })
+
+     </script>
+</body>
+</html>

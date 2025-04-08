@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Publisher</title>
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/css-reset@0.0.1/reset.min.css">  <!-- reset은 무조건 맨 처음에 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="/js/main.js" defer></script>
+</head>
+<body>
+    <!-- 
+        웹퍼블리싱 : 작성자마다 개성(개인 스타일)이 존재
+          => 웹표준에 위배되어서는 안됨
+          => 표준 때문에 개인차가 많이 나지는 않음
+    -->
+
+    <div class="wrap">
+        <header id="header">
+            <div class="container">
+                <h1>Web Publisher</h1>
+                <p>
+                    안녕하세요. 저는 UIUX 디자인, 퍼블리싱 하는 5년 차 웹 퍼블리셔 한수빈입니다. <br>
+                    저는 니즈를 파악하여 주제에 맞는 디자인을 하고, 어떠한 사용자에게든 편리하고 좋은 웹 페이지를 만듭니다!</p>
+                <button class="btn_more">포트폴리오 불러오기</button>
+            </div>
+        </header>
+        <nav class="gnb_wrap">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="portfolio">
+                <h2 class="blind">Portfolio</h2>
+                <!-- ul>li*3>.imgbox>img^.txtbox>strong+p+a -->
+                <ul>
+                    <li>
+                        <div class="imgbox">
+                            <img src="https://images.unsplash.com/photo-1740664865425-1232db85683f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <div class="txtbox">
+                            <strong>클론코딩 (녹색성장지속가능대학원)</strong>
+                            <p>녹색성장지속가능대학원 카이스트 웹사이트의 디자인을 참고하여 웹퍼블리싱 작업을 하였습니다.</p>
+                            <dl>
+                                <dt>Skill</dt>
+                                <dd>HTML, CSS, JS</dd>
+                            </dl>
+                            <div class="links">
+                                <a href="#" class="btn_more" target="_blank">웹페이지보기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgbox">
+                            <img src="https://images.unsplash.com/photo-1726138388546-30955e45aaec?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <div class="txtbox">
+                            <strong>리뉴얼 (유한양행)</strong>
+                            <p>유한양행 웹사이트 리뉴얼 작업</p>
+                            <div class="links">
+                                <a href="#" class="btn_more" target="_blank">웹페이지보기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgbox">
+                            <img src="https://plus.unsplash.com/premium_photo-1723860011127-5029e9b914be?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <div class="txtbox">
+                            <strong>리뉴얼 (법무법인 한결)</strong>
+                            <p>디자인에서부터 웹퍼블리싱까지 리뉴얼 작업을 진행함</p>
+                            <div class="links">
+                                <a href="#" class="btn_more" target="_blank">웹사이트</a>
+                                <a href="#" class="btn_more" target="_blank">피그마(디자인)</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="service">
+                <div class="container">
+                    <hgroup>
+                        <h2>Skills</h2>
+                        <p>웹디자인 툴, 웹퍼블리싱 언어, 두루두루 잘해요~</p>
+                    </hgroup>
+                    <ul>
+                        <li>
+                            <i></i>
+                            <strong>PhotoShop</strong>
+                            <p>이미지합성, 누끼, 색상보정 등을 할 수 있습니다.</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <strong>Illustrator</strong>
+                            <p>이미지합성, 누끼, 색상보정 등을 할 수 있습니다.</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <strong>Figma</strong>
+                            <p>이미지합성, 누끼, 색상보정 등을 할 수 있습니다.</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <strong>HTML</strong>
+                            <p>이미지합성, 누끼, 색상보정 등을 할 수 있습니다.</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <strong>CSS</strong>
+                            <p>이미지합성, 누끼, 색상보정 등을 할 수 있습니다.</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <strong>PhotoShop</strong>
+                            <p>이미지합성, 누끼, 색상보정 등을 할 수 있습니다.</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn_more">자세히보기</a>
+                </div>
+            </section>
+            <section class="gallery">
+                <div class="container">
+                    <ul>
+                        <li><img src="https://images.unsplash.com/photo-1741720252742-d48cf1182239?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></li>
+                        <li><img src="https://images.unsplash.com/photo-1742615869855-ad5270a1b2ac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></li>
+                        <li><img src="https://images.unsplash.com/photo-1743010768826-cc10a67e3b3a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></li>
+                        <li><img src="https://images.unsplash.com/photo-1742293603906-314c95b4b438?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></li>
+                        <li><img src="https://plus.unsplash.com/premium_photo-1741161089559-d6a04c125ec3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></li>
+                        <li><img src="https://images.unsplash.com/photo-1742179770924-654caacf1b2f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></li>
+                        <li><img src="https://plus.unsplash.com/premium_photo-1669256681775-f1f710732cf0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></li>
+                        <li><img src="https://plus.unsplash.com/premium_photo-1668882476414-21409fdb1c83?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></li>
+                        <li><img src="https://images.unsplash.com/photo-1742615869881-95b71cee478c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></li>
+                        <li><img src="https://images.unsplash.com/photo-1742944085736-65d142cef76d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="contact">
+                <div class="container">
+                    <hgroup>
+                        <h2>Contact Us</h2>
+                    </hgroup>
+                    <div class="content">
+                        <form action="#">
+                            <!-- div*3>label+input^button[type=submit] -->
+                            <div>
+                                <label for="name">name</label>
+                                <input type="text" id="name">
+                            </div>
+                            <div>
+                                <label for="email">email</label>
+                                <input type="email" id="email">
+                            </div>
+                            <div>
+                                <label for="message">message</label>
+                                <textarea name="message" id="message" rows="5"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn_more">SEND MESSAGE</button>
+                            </div>
+                        </form>
+                        <div class="contact_info">
+                            <h3 class="blind">Contact Information</h3>
+                            <span>Address</span>
+                            <p>12345 Somewhere Road #654 <br>
+                                Nashville, TN 00000-0000 <br>
+                                USA</p>
+                                <span>Email</span>
+                                <p>user@untitled.tld</p>
+                                <span>Phone</span>
+                                <p>(000) 000-0000</p>
+                                <span>Social</span>
+                                <ul>
+                                    <li><a href="#" target="_blank">
+                                        <i class="ri-twitter-fill"></i>
+                                        <span class="blind">twitter</span>
+                                    </a></li>
+                                    <li><a href="#" target="_blank">
+                                        <i class="ri-facebook-fill"></i>
+                                        <span class="blind">facebook</span>
+                                    </a></li>
+                                    <li><a href="#" target="_blank">
+                                        <i class="ri-github-fill"></i>
+                                        <span class="blind">gitgub</span>
+                                    </a></li>
+                                    <li><a href="#" target="_blank">
+                                        <i class="ri-instagram-line"></i>
+                                        <span class="blind">instagram</span>
+                                    </a></li>
+                                    <li><a href="#" target="_blank">
+                                        <i class="ri-linkedin-fill"></i>
+                                        <span class="blind">linkedin</span>
+                                    </a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="container">
+                footer
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+<!-- 
+    * class 선택자는 공유 되는 스타일 (같은 태그 다른 스타일, 다른 태그 같은 스타일)
+    * id 선택자는 유일한 스타일, 영역 자체가 고유할 때 (header, footer, gnb, login, ....)
+-->

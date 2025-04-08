@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+}
+
+.s1 {background: salmon;}
+.s2 {background: hotpink;}
+.s3 {background: yellowgreen;}
+.s4 {background: lightseagreen;}
+.s5 {background: violet;}
+.s6 {background: lightskyblue;}
+.s7 {background: moccasin;}
+.s8 {background: orange;}
+.s9 {background: gray;}
+.s10 {background: cyan;}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 70px;
+    font-weight: bold;
+    color: #fff;
+}
+#swiper1 {
+    height: 80vh;
+}
+/* 스와이퍼버튼스타일바꾸고싶으면 swiper사이트에서 태그 따오면 됨 */
+#swiper1 .swiper-pagination {
+    bottom: 70px;
+}
+#swiper1 .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    opacity: 1;
+    background: #fff;
+    border-radius: 0;
+    transform: rotate(45deg);
+}
+#swiper1 .swiper-pagination-bullet-active {
+    background: red;
+}
+#swiper1 .swiper-scrollbar-horizontal {
+    width: 200px;
+    height: 7px;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    background: #fff;
+}
+#swiper1 .swiper-scrollbar-drag {
+    background: red;
+}
+#swiper1 .swiper-button-prev {
+    left: 50px;
+}
+#swiper1 .swiper-button-next {
+    right: 50px;
+}
+#swiper1 .swiper-button-prev::after {
+    content: '\EA5C';
+    font-family: remixicon;
+    font-size: 70px;
+}
+#swiper1 .swiper-button-next::after {
+    content: '\EA5C';
+    font-family: remixicon;
+    font-size: 70px;
+}
+
+
+#swiper2 {
+    height: 90vh;
+}
+#swiper2 .swiper-pagination {
+    border: 1px solid #000;
+    bottom: 50px;
+}
+#swiper2 .swiper-pagination span {
+    font-size: 20px;
+    font-weight: bold;
+}
+#swiper2 .swiper-pagination-current {color: red;}
+#swiper2 .swiper-pagination-total {color: green;}
+
+
+
+#swiper3 {
+    height: 80vh;
+}
+#swiper3 .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    bottom: 50px;
+    color: #fff;
+}
+#swiper3 .swiper-pagination .num {
+    font-size: 20px;
+    font-weight: bold;
+}
+#swiper3 .swiper-pagination .progress {
+    width: 150px;
+    height: 4px;
+    background: rgba(255, 255, 255, .5);
+}
+#swiper3 .swiper-pagination .bar {
+    height: 100%;
+    background: #fff;
+    animation: slideBar var(--slide-duration) linear;
+}
+
+
+#swiper4 {
+    height: 80vh;
+}
+#swiper4 .slide_move {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 40px;
+    z-index: 10;
+    color: #fff;
+}
+#swiper4 .swiper-pagination {
+    position: static;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    bottom: 50px;
+}
+#swiper4 .swiper-pagination .num {
+    font-size: 20px;
+    font-weight: bold;
+}
+#swiper4 .swiper-pagination .progress {
+    width: 150px;
+    height: 4px;
+    background: rgba(255, 255, 255, .5);
+}
+#swiper4 .swiper-pagination .bar {
+    height: 100%;
+    background: #fff;
+    animation: slideBar var(--slide-duration) linear;
+}
+#swiper4 .btn-play-stop {
+    font-size: 26px;
+    color: #fff;
+}
+.reset .bar {
+    animation: none;
+}
+
+
+.swiper5_wrap {
+    padding: 0 130px;
+}
+#swiper5 {
+    height: 300px;
+}
+
+
+.swiper6_wrap {
+    padding: 0 80px;
+}
+#swiper6 {
+    height: 400px;
+    padding: 20px; /* 그림자가 overflow:hidden이라 안잘리게 하기 위해서 */
+}
+#swiper6 .swiper-wrapper {
+    gap: 10%;
+    align-items: center;
+}
+#swiper6 .swiper-slide {
+    width: 20%;
+    height: auto;
+    opacity: .5;
+    border-radius: 20px;
+    aspect-ratio: 1 / 0.8;
+    transition: all 0.5s;
+}
+#swiper6 .swiper-slide-active {
+    width: 40%;
+    opacity: 1;
+    border-radius: 20px;
+    box-shadow: 4px 4px 3px rgba(0,0,0,.5);
+    aspect-ratio: 1 / 0.7;
+}
+#swiper6 .swiper-button-next {
+    right: 25%;
+}
+#swiper6 .swiper-button-prev {
+    left: 25%;
+}
+
+
+
+@keyframes slideBar {
+    0% {width: 0;}
+    100% {width: 100%;}
+}

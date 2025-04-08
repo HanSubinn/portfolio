@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동서식품</title>
+
+    <!-- favicon -->
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- Style Sheet -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="/js/main.js" defer></script>
+
+</head>
+<body>
+     <header id="header">
+            <div class="header_content">
+                <h1><a href="/"><span class="blind">동서식품</span></a></h1>
+                <nav id="gnb">
+                    <ul class="dep1">
+                        <li><a href="#">회사소개</a>
+                            <ul class="dep2">
+                                <li><a href="#">동서식품</a></li>
+                                <li><a href="#">식품안전센터</a></li>
+                                <li><a href="#">산업안전보건방침</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">제품소개</a>
+                            <ul class="dep2">
+                                <li><a href="#">브랜드</a></li>
+                                <li><a href="#">제품소개</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">홍보센터</a>
+                            <ul class="dep2">
+                                <li><a href="#">뉴스</a></li>
+                                <li><a href="#">웹진 삶의 향기</a></li>
+                                <li><a href="#">동영상 레시피</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">커피클래스</a></li>
+                                <li><a href="#">커피테이스트</a></li>
+                                <li><a href="#">소셜미디어</a></li>
+                                <li><a href="#">TV CF</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">사회공헌</a>
+                            <ul class="dep2">
+                                <li><a href="#">삶의향기 동서문학상</a></li>
+                                <li><a href="#">맥심커피배 입신최강전</a></li>
+                                <li><a href="#">동서커피클래식</a></li>
+                                <li><a href="#">동서식품 장학회</a></li>
+                                <li><a href="#">맥심 사랑의 향기</a></li>
+                                <li><a href="#">동서식품 꿈의 도서관</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">고객의 소리</a>
+                            <ul class="dep2">
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">제품 관련 문의 및 불편사항</a></li>
+                                <li><a href="#">기타문의</a></li>
+                                <li><a href="#">소비자중심경영(CCM)</a></li>
+                                <li><a href="#">고객불만 접수방법 및 처리절차</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_util">
+                    <div class="mall_wrap">
+                        <button>공식몰 바로가기</button>
+                    </div>
+                    <div class="search_wrap">
+                        <button>
+                            <i class="ri-search-line"></i>
+                            <span class="blind">검색창열기</span>
+                        </button>
+                    </div>
+                    <div class="allmenu_wrap">
+                        <button>
+                            <i class="ri-menu-3-line"></i>
+                            <span class="blind">전체메뉴열기</span>
+                        </button>
+                    </div>
+                </div>
+                    <div class="search_box">
+                        <form>
+                            <div class="input_box">
+                                <input type="text" placeholder="검색어를 입력하세요.">
+                                <button type="submit">
+                                    <img src="/image/ico_search.svg" alt="검색하기">
+                                </button>
+                            </div>
+                            <div class="keyword_box">
+                                <h3>추천 검색어</h3>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+     </header>
+     <main>
+        <div class="main_visual">
+            <div class="main_video_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <video src="/video/[맥심 T.O.P] Maxim T.O.P '가장 가까운 휴식' 직장인 편.mp4" muted autoplay loop></video>
+                        <strong> T.O.P </strong>
+                        <p>휴식이 나를 부르는 순간 <br> Maxim T.O.P</p>
+                        <button>View More</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <video src="/video/[KANU] 나를 찾는 순간, 나를 찾는 커피 (30s_A).mp4" muted autoplay loop></video>
+                        <strong>KANU </strong>
+                        <p>나를 찾는 순간, 나를 찾는 커피 <br> KANU</p>
+                        <button>View More</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <video src="/video/📢 신제품│부드러운 녹차, 동서  마음우린 호지차  (15s).mp4" muted autoplay loop></video>
+                        <strong> 호지차 </strong>
+                        <p>온전한 쉼이 필요할 때, <br> 마음우린 호지차</p>
+                        <button>View More</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <video src="/video/[맥심 모카골드] Cut! & Mocha Gold, 진한 집중 한잔.mp4" muted autoplay loop></video>
+                        <strong> Maxim </strong>
+                        <p>진한 집중 한잔! <br> 맥심 모카골드</p>
+                        <button>View More</button>
+                    </div>
+                </div>
+                <!-- <div class="swiper_content">
+                    <strong>삶의 향기가 <br> 문학이 됩니다 </strong>
+                </div> -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <section class="new_product">
+            <div class="container">
+                <hgroup>
+                    <h2>new product</h2>
+                    <p>동서의 새로운 제품을 지금 만나보세요.</p>
+                </hgroup>
+                <div class="product_swiper_wrap">
+                    <div class="product_text_swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <span class="brand">포스트</span>
+                                <span class="name">포스트 크리치오 쿠키</span>
+                                <p>세 겹으로 한층 더 바삭한 초코 시리얼과 <br> 다양하고 귀여운 쿠키의 조합</p>
+                                <div class="button_wrap">
+                                    <a href="#" class="main_link">BRAND</a>
+                                    <a href="#" class="main_link">MORE</a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <span class="brand">호지차</span>
+                                <span class="name">동서 마음우린 유자 호지차</span>
+                                <p>호지차와 상큼한 유자의 맛을 <br> 함께 즐길 수 있는 동서 마음우린 유자 호지차</p>
+                                <div class="button_wrap">
+                                    <a href="#" class="main_link">BRAND</a>
+                                    <a href="#" class="main_link">MORE</a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <span class="brand">카누</span>
+                                <span class="name">카누 에스프레소 쇼콜라 라떼</span>
+                                <p>다크 초콜릿 풍미의 쇼콜라 블렌드와 <br> 부드러운 카누 라떼의 완벽한 밸런스</p>
+                                <div class="button_wrap">
+                                    <a href="#" class="main_link">BRAND</a>
+                                    <a href="#" class="main_link">MORE</a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <span class="brand">맥심</span>
+                                <span class="name">맥심 모카골드 제로슈거 커피믹스</span>
+                                <p>부드러운 단 맛을 즐길 수 있는 <br> 제로슈거 커피믹스</p>
+                                <div class="button_wrap">
+                                    <a href="#" class="main_link">BRAND</a>
+                                    <a href="#" class="main_link">MORE</a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <span class="brand">스타벅스</span>
+                                <span class="name">스타벅스 더블샷 돌체</span>
+                                <p>스타벅스 다크로스트 에스프레소 커피에 <br> 풍부한 우유와 달콤한 연유가 더해진 더블샷 돌체</p>
+                                <div class="button_wrap">
+                                    <a href="#" class="main_link">BRAND</a>
+                                    <a href="#" class="main_link">MORE</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product_img_swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide"><!--p태그 추가완료-->
+                                <div class="product_img"><img src="/image/img_product_view_500x50070.png" alt="크리치오"></div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="product_img"><img src="/image/img_product_view_500x500_1_2412271.png" alt="호지차"></div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="product_img"><img src="image/img_product_view_500x500_348.png" alt="카누"></div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="product_img"><img src="/image/img_product_view_500x50067.png" alt="맥심제로"></div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="product_img"><img src="/image/img_product_view_500x500_716.png" alt="스타벅스"></div>
+                            </li>
+                        </ul>
+                        <div class="swiper_navigation_wrap">
+                            <div class="btn_prev"><img src="" alt=""></div>
+                            <div class="btn_next"><img src="" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our_brands">
+            <hgroup>
+                <h2>our brands</h2>
+                <span>고객의 바른 건강을 생각하는 <br class="mo"> 동서의 다양한 브랜드를 소개합니다.</span>
+            </hgroup>
+            <div class="brand_list_swiper">
+                <ul class="swiper-wrapper"><!--swiper(수정완료)-->
+                    <li class="swiper-slide">
+                        <img src="/image/logo/logo_maxim.png" alt="맥심">
+                        <span class="blind">맥심</span>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="/image/logo/logo_kanu.png" alt="">
+                        <span class="blind">카누</span>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="/image/logo/logo_maxwell.png" alt="">
+                        <span class="blind">맥스웰</span>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="/image/logo/logo_post.png" alt="">
+                        <span class="blind">포스트</span>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="/image/logo/logo_oreo.png" alt="">
+                        <span class="blind">오레오</span>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="/image/logo/logo_top.png" alt="">
+                        <span class="blind">티오피</span>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="/image/logo/logo_philadelphia.png" alt="">
+                        <span class="blind">필라델피아</span>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="/image/logo/logo_starbucks.png" alt="">
+                        <span class="blind">스타벅스</span>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="/image/logo/logo_green.png" alt="">
+                        <span class="blind">현미녹차</span>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="/image/logo/logo_hogi.png" alt="">
+                        <span class="blind">호지차</span>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="/image/logo/logo_mitte.png" alt="">
+                        <span class="blind">미떼</span>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="/image/logo/logo_honey.png" alt="">
+                        <span class="blind">동서벌꿀</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="brand_img_swiper">
+                <ul class="swiper-wrapper"><!--swiper(수정완료)-->
+                    <li class="swiper-slide s1"><!--li 배경이미지-->
+                        <img src="/image/logo/logo_maxim.png" alt="맥심">
+                        <div class="brand_text">
+                            <p>언제 어디서나 좋은 커피, 맥심</p>
+                            <a href="#"><img src="/image/btn_right_arrow_white.png" alt=""></a>
+                        </div>
+                    </li> 
+                    <li class="swiper-slide s2">
+                        <img src="/image/logo/logo_kanu.png" alt="카누">
+                        <div class="brand_text">
+                            <p>세상에서 가장 작은 카페, 카누</p>
+                            <a href="#"><img src="/image/btn_right_arrow_white.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="swiper-slide s3">
+                        <img src="/image/logo/logo_maxwell.png" alt="맥스웰">
+                        <div class="brand_text">
+                            <p>함께하는 즐거움, 맥스웰하우스</p>
+                            <a href="#"><img src="/image/btn_right_arrow_white.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="swiper-slide s4">
+                        <img src="/image/logo/logo_post.png" alt="포스트">
+                        <div class="brand_text">
+                            <p>좋은 아침! 좋은 생각! 포스트</p>
+                            <a href="#"><img src="/image/btn_right_arrow_white.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="swiper-slide s5">
+                        <img src="/image/logo/logo_oreo.png" alt="오레오">
+                        <div class="brand_text">
+                            <p>전세계인들에게 가장 사랑받는 쿠키, 오레오</p>
+                            <a href="#"><img src="/image/btn_right_arrow_white.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="swiper-slide s6">
+                        <img src="/image/logo/logo_top.png" alt="티오피">
+                        <div class="brand_text">
+                            <p>열정의 에스프레소, 맥심 T.O.P</p>
+                            <a href="#"><img src="/image/btn_right_arrow_white.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="swiper-slide s7">
+                        <img src="/image/logo/logo_philadelphia.png" alt="필라델피아">
+                        <div class="brand_text">
+                            <p>Fresh Creamy Taste, 필라델피아 크림치즈</p>
+                            <a href="#"><img src="/image/btn_right_arrow_white.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="swiper-slide s8">
+                        <img src="/image/logo/logo_starbucks.png" alt="스타벅스">
+                        <div class="brand_text">
+                            <p>언제 어디서나 스타벅스 RTD</p>
+                            <a href="#"><img src="/image/btn_right_arrow_white.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="swiper-slide s9">
+                        <img src="/image/logo/logo_green.png" alt="현미녹차">
+                        <div class="brand_text">
+                            <p>녹차와 현미의 부드러운 구수한 맛, 현미녹차</p>
+                            <a href="#"><img src="/image/btn_right_arrow_white.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="swiper-slide s10">
+                        <img src="/image/logo/logo_hogi.png" alt="호지차">
+                        <div class="brand_text">
+                            <p>부드러운 녹차, 동서 마음우린 호지차</p>
+                            <a href="#"><img src="/image/btn_right_arrow_white.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="swiper-slide s11">
+                        <img src="/image/logo/logo_mitte.png" alt="미떼">
+                        <div class="brand_text">
+                            <p>찬바람 불 때 핫초코 미떼</p>
+                            <a href="#"><img src="/image/btn_right_arrow_white.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="swiper-slide s12">
+                        <img src="/image/logo/logo_honey.png" alt="동서벌꿀">
+                        <div class="brand_text">
+                            <p>전문가가 인정한 동서벌꿀</p>
+                            <a href="#"><img src="/image/btn_right_arrow_white.png" alt=""></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="our_story">
+            <div class="container">
+                <hgroup>
+                    <h2>our story</h2>
+                    <p>생활 속에 향기를 더하는 동서식품</p>
+                    <span>여러분의 삶에 향기를 가져다 드리는 식품 회사가 되도록 노력하겠습니다.</span>
+                </hgroup>
+                <div class="story_list">
+                    <ul>
+                        <li class="title"><!--li : 이미지 배경-->
+                            <strong>our story</strong>
+                        </li>
+                        <li class="history"><!--li : 이미지 배경-->
+                            <a href="#"><!--a : 단색 배경-->
+                                <!-- <img src="" alt="history">  -->
+                                <strong>DongSuh History</strong>
+                                <p>식품문화를 꽃피워온 <br> 동서식품의 지난 발자취</p>
+                            </a>
+                        </li>
+                        <li class="maxim_plant">
+                            <a href="#">
+                                <!-- <img src="" alt="maxim_plant"> -->
+                                <strong>Maxim Plant</strong>
+                                <p>도심 속 정원, 숲속 커피 공장</p>
+                            </a>
+                        </li>
+                        <li class="contribution">  
+                            <a href="#">
+                                <!-- <img src="" alt="contribution"> -->
+                                <strong>Social Contribution</strong>
+                                <p>함께 하는 삶의 향기 </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="food_safety">
+            <div class="container">
+                <hgroup>
+                    <h2>food safety</h2>
+                    <p>안전한 식품 이야기, 식품안전센터</p>
+                </hgroup>
+                <div class="safety_wrap_img">
+                    <img src="/image/iStock-1316530403.jpg" alt="안전한식품이야기">
+                    <img src="/image/iStock-2167817620.jpg" alt="품질관리현장">
+                    <img src="/image/iStock-1406331056.jpg" alt="안전한식품섭취음용법">
+                </div>
+                <div class="safety_con_wrap"><!--수정완료 -->
+                    <ul>
+                        <li>
+                            <span class="title">안전한 식품 이야기</span>    
+                            <p class="text">동서식품은 전 제품의 품질 및 식품안전을 보증함으로써 고객만족을 최우선으로 하며, 당사에서 생산되는 전 제품에 HACCP 시스템을 도입하고 있습니다.</p>
+                            <a href="#" class="main_link">View More</a>
+                        </li>
+                        <li>
+                            <span class="title">품질관리현장</span>
+                            <p class="text">동서식품은 전 제품의 품질 및 식품안전을 체계적으로 보증하기 위하여 상품기획, 개발, 구매 단계에서부터 제조, 물류, 영업에 이르는 전 단계에 대해 품질 및 식품안전경영시스템을 구축하고 있습니다.</p>
+                            <a href="#" class="main_link">View More</a>
+                        </li>
+                        <li>
+                            <span    class="title">안전한 식품 섭취 음용법</span>
+                            <p class="text">안전하게 식품을 먹는 방법 함께 알아볼까요?</p>
+                            <a href="#" class="main_link">View More</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="media_center">
+            <div class="container">
+                <!-- <hgroup>
+                    <h2>media center</h2>
+                </hgroup> -->
+                <div class="media_center_wrap">
+                    <div class="media_center_tab">
+                        <div class="tabs_wrap">
+                            <ul class="tabs">
+                                <li class="active">news</li>
+                                <li>웹진 삶의 향기</li>
+                                <li>동영상 레시피</li>
+                                <li>이벤트</li>
+                            </ul>
+                            <ul class="tabs_name">
+                                <li>news</li>
+                                <li>webzine</li>
+                                <li>recipe</li>
+                                <li>event</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="main_link">View More</a>
+                    </div>
+                    <div class="media_center_contents">
+                        <div class="conbox conbox_on">
+                            <h3 class="blind">news</h3>
+                            <ul>
+                                <li><a href="#">
+                                    <div class="conbox_img">
+                                        <img src="/image/news_thum1.jpeg" alt="">
+                                    </div>
+                                    <p>㈜동서·동서식품, 산불 피해 지역에 성금 3억원 기탁</p>
+                                    <span class="date">2025.04.02</span>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="conbox_img">
+                                        <img src="/image/news_thumb2.jpg" alt="">
+                                    </div>
+                                    <p>동서식품, 맥심 모카골드 스틱 디자인 8년만에 친환경 리뉴얼</p>
+                                    <span class="date">2025.03.31</span>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="conbox_img">
+                                        <img src="/image/news_thumb3.jpg" alt="">
+                                    </div>
+                                    <p>동서식품, 포스트 시리얼 일부 제품 OK캐쉬백 포인트 적립 변경</p>
+                                    <span class="date">2025.03.27</span>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="conbox_img">
+                                        <img src="/image/thumbnail_274_178(4).jpg" alt="">
+                                    </div>
+                                    <p>진한 다크 초콜릿과 부드러운 라떼의 완벽한 밸런스 동서식품, ‘카누 에스프레소 쇼콜라 라떼’ 출시</p>
+                                    <span class="date">2025.03.20</span>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="conbox_img">
+                                        <img src="/image/thumbnail_274_178(3).jpg" alt="">
+                                    </div>
+                                    <p>동서식품 ‘맥심골목’, 제33회 소비자가 뽑은 좋은 광고상 수상</p>
+                                    <span class="date">2025.03.14</span>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="conbox_img">
+                                        <img src="/image/thumbnail_274_178(2).jpg" alt="">
+                                    </div>
+                                    <p>세 겹으로 한층 더 바삭한 초코 시리얼과 귀여운 쿠키의 만남 동서식품, 신제품 ‘포스트 크리치오 쿠키’ 출시</p>
+                                    <span class="date">2025.03.11</span>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="conbox_img">
+                                        <img src="/image/thumbnail_274_178(1).jpg" alt="">
+                                    </div>
+                                    <p>동서식품, 탄광마을 아동과 함께하는 문화 체험 봉사활동 진행</p>
+                                    <span class="date">2025.02.19</span>
+                                </a></li>
+                            </ul>
+                        </div>
+                        <div class="conbox"><!--콘텐츠추가완료-->
+                            <h3 class="blind">webzine</h3>
+                            <ul>
+                                <li><a href="#">
+                                    <div class="conbox_img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <p>[차 한잔의 향기] 오래된 가치의 발견, 김형호 라디오 수집 연구가</p>
+                                    <span class="date">[2025년 03/04월호]</span>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="conbox_img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <p>[행복 레시피] 명란 미나리 솥밥</p>
+                                    <span class="date">[2025년 03/04월호]</span>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="conbox_img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <p>[우리집 식물원] 스트레스를 낮추는 산뜻한 향기</p>
+                                    <span class="date">[2025년 03/04월호]</span>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="conbox_img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <p>[올 댓 커피] 장인정신이 녹아 있는 일본의 커피문화</p>
+                                    <span class="date">[2025년 03/04월호]</span>
+                                </a></li>
+                            </ul>
+                        </div>
+                        <div class="conbox">
+                            <h3 class="blind">recipe</h3>
+                            <ul>
+                                <li><a href="#">
+                                    <div class="conbox_img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <p>포스트 화이버 오트밀 - 복숭아 오버나이트 오트밀</p>
+                                    <span class="date">포스트 화이버 오트밀</span>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="conbox_img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <p>포스트 화이버 오트밀 - 아보카도 오버나이트 오트밀
+                                
+                                    </p>
+                                    <span class="date">포스트 화이버 오트밀</span>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="conbox_img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <p>포스트 화이버 오트밀 - 베이컨 크림 오트밀 리조또
+                                
+                                    </p>
+                                    <span class="date">포스트 화이버 오트밀</span>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="conbox_img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <p>오레오 레시피 - 오레오 도넛</p>
+                                    <span class="date">오레오</span>
+                                </a></li>
+                            </ul>
+                        </div>
+                        <div class="conbox">
+                            <h3 class="blind">event</h3>
+                            <ul>
+                                <li><a href="#">
+                                    <div class="conbox_img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <p>2025 삶의향기 독자이벤트(상반기)</p>
+                                    <span class="date">2025-03-04 ~ 2025-03-31</span>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="conbox_img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <p>2024 삶의향기 독자이벤트(하반기)</p>
+                                    <span class="date">2024-08-30 ~ 2024-09-30</span>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="conbox_img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <p>2023 설 선물세트</p>
+                                    <span class="date">2023-01-11 ~ 2023-01-25</span>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="DongSuh_media">
+            <hgroup>
+                <h2>DongSuh media</h2>
+                <p>동서식품의 새로운 CF를 지금 만나보세요.</p>
+            </hgroup>
+            <div class="cf_swiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <div class="thumb_img">
+                            <img src="/image/media_tab_cf_01.png" alt="크리치오">
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="thumb_img">
+                            <img src="/image/maxresdefault (1).jpg" alt="">
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="thumb_img">
+                            <img src="/image/media_tab_cf_03.jpg" alt="">
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="thumb_img">
+                            <img src="/image/media_tab_cf_04.jpg" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="cf_sub_swiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <p class="sub_title">새로운 세 겹 바삭한 레시피?</p>
+                        <span class="sub_txt">해원이가 찾아간 치오🦔의 <br> 크리치오 신메뉴 개발 현장 🎤</span>
+                        <div class="hashtag_tab">
+                            <span class="hashtag">#Post</span>
+                            <span class="hashtag">#크리치오</span>
+                            <a href="#"><img src="/image/btn_right_arrow_white.png" alt="자세히보기"></a>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <p class="sub_title">부드러운 녹차, 동서 마음우린 호지차 </p>
+                        <span class="sub_txt">온전한 쉼이 필요할 때, <br> 녹찻잎을 두 번 구운 호지차. </span>
+                        <div class="hashtag_tab">
+                            <span class="hashtag">#호지차</span>
+                            <span class="hashtag">#마음우린호지차</span>
+                            <a href="#"><img src="/image/btn_right_arrow_white.png" alt="자세히보기"></a>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <p class="sub_title">동서 티백이 밴드 ‘이제 쉬는거야’ MV</p>
+                        <span class="sub_txt">쉼을 부르는 동서 티백이 밴드의 HOT DEBUT <br> 듣기만 해도 마음이 포근해지는 쉼을 채우는 노래🎤 ‘이제 쉬는거야’🌿</span>
+                        <div class="hashtag_tab">
+                            <span class="hashtag">#동서티백</span>
+                            <span class="hashtag">#티백이밴드</span>
+                            <span class="hashtag">#티백이들과함께</span>
+                            <a href="#"><img src="/image/btn_right_arrow_white.png" alt="자세히보기"></a>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <p class="sub_title">[맥심 화이트골드] 나에게 더 부드럽게 </p>
+                        <span class="sub_txt">떠나요, 화이트골드의 부드러움 속으로 <br> 나에게 더 부드럽게, 맥심 화이트골드 </span>
+                        <div class="hashtag_tab">
+                            <span class="hashtag">#맥심</span>
+                            <span class="hashtag">#화이트골드</span>
+                            <a href="#"><img src="/image/btn_right_arrow_white.png" alt="자세히보기"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="social_media">
+            <div class="container">
+                <hgroup>
+                    <p>social media</p>
+                </hgroup>
+                <div class="sns_swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#"><img src="/image/social_01.jpg" alt=""></a>
+                            <i class="ri-instagram-line"></i>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#"><img src="/image/social_02.jpg" alt=""></a>
+                            <i class="ri-instagram-line"></i>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#"><img src="/image/social_03.jpg" alt=""></a>
+                            <i class="ri-instagram-line"></i>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#"><img src="/image/KakaoTalk_20250407_103456837.jpg" alt=""></a>
+                            <i class="ri-instagram-line"></i>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#"><img src="/image/KakaoTalk_20250407_103456837_01.jpg" alt=""></a>
+                            <i class="ri-instagram-line"></i>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#"><img src="/image/KakaoTalk_20250407_103456837_02.jpg" alt=""></a>
+                            <i class="ri-instagram-line"></i>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#"><img src="/image/KakaoTalk_20250407_103456837_03.jpg" alt=""></a>
+                            <i class="ri-instagram-line"></i>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#"><img src="/image/IMG_7551.jpeg" alt=""></a>
+                            <i class="ri-instagram-line"></i>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#"><img src="/image/IMG_7552.jpeg" alt=""></a>
+                            <i class="ri-instagram-line"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer_link">
+                <ul class="footer_menu">
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">동반성장실천사항</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">영상정보처리기기운영관리방침</a></li>
+                </ul>
+                <div class="footer_site">
+                    <div class="footer_sns">
+                        <a href="#" target="_blank"><span class="blind">유튜브</span><i class="ri-youtube-fill"></i></a>
+                        <a href="#" target="_blank"><span class="blind">인스타그램</span><i class="ri-instagram-fill"></i></a>
+                        <a href="#" target="_blank"><span class="blind">페이스북</span><i class="ri-facebook-circle-fill"></i></a>
+                    </div>
+                    <div class="brand_site">
+                        <button>BRAND SITE <i class="ri-add-line"></i></button>
+                        <ul>
+                            <li><a href="#">KANU</a></li>
+                        </ul>
+                    </div>
+                    <div class="family_site">
+                        <button>FAMILY SITE <i class="ri-add-line"></i></button>
+                        <ul>
+                            <li><a href="#">삶의향기 동서문학상</a></li>
+                            <li><a href="#">(주)동서</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_info">
+                <a href="#">
+                    <img src="/image/1x/Asset 2.png" alt="동서식품심볼">
+                </a>
+                <address>
+                    <span>Address</span> [부평공장] 인천시 부평구 새벌로 55 [서울사무소] 서울시 마포구 독막로 324 (도화동, 동서빌딩)
+                    <span>대표번호</span> 1588-2233
+                    <span>고객상담실</span>  080-023-9114
+                </address>
+                <p class="copyright">&copy; 2017 Dongsuh Foods Corporation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
