@@ -70,7 +70,7 @@ section {
     display: block;
     width: 1rem;
     height: 1rem;
-    background-image: url(./image/text_icon.png);
+    background-image: url(../image/text_icon.png);
 }
 
 .main_link:hover {
@@ -98,7 +98,7 @@ header:hover {
     border-bottom: 1px solid #dedede;
 }
 header:hover h1>a {
-    background: url(./image/logo_red.png) no-repeat;
+    background: url(../image/logo_red.png) no-repeat;
     background-position: left top;
     background-size: 100% auto;
 }
@@ -116,7 +116,7 @@ header h1 a {
     display: block;
     height: 3.5rem;
     width: 16rem;
-    background: url(./image/logo_white.png) no-repeat;
+    background: url(../image/logo_white.png) no-repeat;
     background-position: left top;
     background-size: 100% auto;
 }
@@ -126,7 +126,7 @@ header.scroll {
     border-bottom: 1px solid #dedede;
 }
 header.scroll h1>a {
-    background: url(./image/logo_red.png) no-repeat;
+    background: url(../image/logo_red.png) no-repeat;
     background-position: left top;
     background-size: 100% auto;
 }
@@ -509,18 +509,18 @@ header .search_box .keyword_box {
     font-weight: 300;
 }
 
-.brand_img_swiper .s1 {background: url(./image/bg_prd_maxim.jpg) no-repeat fixed;}
-.brand_img_swiper .s2 {background: url(./image/bg_prd_kanubarista.jpg) no-repeat fixed;}
-.brand_img_swiper .s3 {background: url(./image/bg_prd_kanu.jpg) no-repeat;}
-.brand_img_swiper .s4 {background: url(./image/bg_prd_post.jpg) no-repeat;}
-.brand_img_swiper .s5 {background: url(./image/bg_prd_oreo.jpg) no-repeat;}
-.brand_img_swiper .s6 {background: url(./image/bg_prd_top.jpg) no-repeat;}
-.brand_img_swiper .s7 {background: url(./image/bg_prd_philadelphia.jpg) no-repeat;}
-.brand_img_swiper .s8 {background: url(./image/bg_prd_starbucks.jpg) no-repeat;}
+.brand_img_swiper .s1 {background: url(../image/bg_prd_maxim.jpg) no-repeat fixed;}
+.brand_img_swiper .s2 {background: url(../image/bg_prd_kanubarista.jpg) no-repeat fixed;}
+.brand_img_swiper .s3 {background: url(../image/bg_prd_kanu.jpg) no-repeat;}
+.brand_img_swiper .s4 {background: url(../image/bg_prd_post.jpg) no-repeat;}
+.brand_img_swiper .s5 {background: url(../image/bg_prd_oreo.jpg) no-repeat;}
+.brand_img_swiper .s6 {background: url(../image/bg_prd_top.jpg) no-repeat;}
+.brand_img_swiper .s7 {background: url(../image/bg_prd_philadelphia.jpg) no-repeat;}
+.brand_img_swiper .s8 {background: url(../image/bg_prd_starbucks.jpg) no-repeat;}
 .brand_img_swiper .s9 {background: url(./image/bg_prd_green.jpg) no-repeat;}
-.brand_img_swiper .s10 {background: url(./image/bg_prd_hogi.jpg) no-repeat;}
-.brand_img_swiper .s11 {background: url(./image/bg_prd_mitte.jpg) no-repeat;}
-.brand_img_swiper .s12 {background: url(./image/bg_prd_honey.jpg) no-repeat;}
+.brand_img_swiper .s10 {background: url(../image/bg_prd_hogi.jpg) no-repeat;}
+.brand_img_swiper .s11 {background: url(../image/bg_prd_mitte.jpg) no-repeat;}
+.brand_img_swiper .s12 {background: url(../image/bg_prd_honey.jpg) no-repeat;}
 
 
 /* our_story */
@@ -591,9 +591,9 @@ header .search_box .keyword_box {
 .story_list .title  {
     background-image: linear-gradient(to right, var(--main-red), #EDBDA3);
 }
-.story_list .history a {background-image: url(./image/bg_library.jpg);}
-.story_list .maxim_plant a {background-image: url(./image/img_safety_story23.png);}
-.story_list .contribution a {background-image: url(./image/img_csr4.jpg);}
+.story_list .history a {background-image: url(../image/bg_library.jpg);}
+.story_list .maxim_plant a {background-image: url(../image/img_safety_story23.png);}
+.story_list .contribution a {background-image: url(../image/img_csr4.jpg);}
 
 
 /* 식품안전센터 */
